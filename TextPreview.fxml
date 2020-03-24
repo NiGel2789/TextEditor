@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TextPreviewController">
+   <children>
+      <Button layoutX="521.0" layoutY="652.0" mnemonicParsing="false" onAction="#exportText" prefHeight="50.0" prefWidth="93.0" text="Close" />
+      <Button layoutX="16.0" layoutY="652.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="50.0" prefWidth="93.0" text="Back to Main Menu" textAlignment="CENTER" wrapText="true" />
+      <TextArea fx:id="result" editable="false" layoutX="28.0" layoutY="53.0" prefHeight="576.0" prefWidth="577.0" />
+      <Label layoutX="28.0" layoutY="21.0" text="Formatted Text Preview" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="511.0" layoutY="18.0" mnemonicParsing="false" onAction="#showFormatting" prefHeight="11.0" prefWidth="93.0" text="Show Preview" />
+      <Label alignment="TOP_LEFT" layoutX="371.0" layoutY="656.0" text="File has been exported to:" />
+      <Label fx:id="userHome" alignment="TOP_RIGHT" layoutX="261.0" layoutY="677.0" prefHeight="17.0" prefWidth="233.0" />
+      <Label alignment="TOP_LEFT" layoutX="303.0" layoutY="22.0" prefHeight="17.0" prefWidth="207.0" text="Click here to see a preview!      -----&gt;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
